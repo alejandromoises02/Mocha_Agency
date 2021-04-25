@@ -1,0 +1,133 @@
+header {
+  position: relative;
+  /* 3 */
+  background: #f94e3f;
+  /* LOGO MOCCA */
+}
+
+header nav .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0px;
+  height: 48px;
+}
+
+header nav .menu ul li a {
+  left: 0px;
+  top: 13px;
+  font-family: "Comfortaa", cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #f2eee3 !important;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+}
+
+/* Banner Landing */
+.banner_landing {
+  position: absolute;
+  height: 568px;
+  left: 0px;
+  top: 72px;
+  background: #828282;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.banner_landing .lenguage_select {
+  position: absolute;
+  height: 48px;
+  right: 0px;
+  top: 0px;
+  background: #f2eee3;
+  opacity: 0.1;
+}
+
+.banner_landing .lenguage_select .esp_eng {
+  position: absolute;
+  width: 70px;
+  height: 48px;
+  right: 10px;
+  top: 0px;
+}
+
+.banner_landing .lenguage_select .esp_eng .esp {
+  position: absolute;
+  top: 33.33%;
+  bottom: 33.33%;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #f2eee3;
+  opacity: 0.9;
+  left: 8.57%;
+  right: 61.43%;
+}
+
+.banner_landing .lenguage_select .esp_eng .eng {
+  position: absolute;
+  top: 33.33%;
+  bottom: 33.33%;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #f2eee3;
+  opacity: 0.9;
+  left: 57.14%;
+  right: 8.57%;
+  letter-spacing: -0.05em;
+}
+
+.banner_landing .imagen_banner {
+  position: absolute;
+  width: 175px;
+  height: 44px;
+  left: 92px;
+  top: 263px;
+  font-family: "Comfortaa", cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+/*# sourceMappingURL=styles.css.map */

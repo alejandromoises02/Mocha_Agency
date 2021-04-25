@@ -1,0 +1,126 @@
+$color1: #6f2108;
+$color2: #e3632d;
+$color3: #f94e3f;
+$color4: #e77e4d;
+$color5: #f2eee3;
+
+header {
+  position: relative;
+  //width: 360px;
+  //height: 72px;
+  /* 3 */
+  background: $color3;
+
+  /* LOGO MOCCA */
+  nav {
+    .logo_moca {
+      //height: 29px;
+      //left: 16px;
+      //border-radius: 0px;
+      //margin: 22px 0px 21px 16px;
+    }
+    .menu {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 0px;
+      height: 48px;
+
+      ul {
+        li {
+          a {
+            left: 0px;
+            top: 13px;
+            font-family: "Comfortaa", cursive;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 22px;
+            display: flex;
+            align-items: center;
+            color: $color5 !important;
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Banner Landing */
+
+.banner_landing {
+  position: absolute;
+  //width: 360px;
+  height: 568px;
+  left: 0px;
+  top: 72px;
+  background: #828282;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+  .lenguage_select {
+    position: absolute;
+    //width: 360px;
+    height: 48px;
+    right: 0px;
+    top: 0px;
+    background: $color5;
+    opacity: 0.1;
+
+    .esp_eng {
+      position: absolute;
+      width: 70px;
+      height: 48px;
+      right: 10px;
+      top: 0px;
+
+      @mixin lenguage {
+        position: absolute;
+        top: 33.33%;
+        bottom: 33.33%;
+        font-family: "Open Sans", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 16px;
+        display: flex;
+        //align-items: center;
+        color: $color5;
+        opacity: 0.9;
+      }
+
+      .esp {
+        @include lenguage;
+        left: 8.57%;
+        right: 61.43%;
+      }
+
+      .eng {
+        @include lenguage;
+        left: 57.14%;
+        right: 8.57%;
+        letter-spacing: -0.05em;
+      }
+    }
+  }
+
+  .imagen_banner {
+    position: absolute;
+    width: 175px;
+    height: 44px;
+    left: 92px;
+    top: 263px;
+
+    font-family: "Comfortaa", cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #ffffff;
+  }
+}
