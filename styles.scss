@@ -52,28 +52,38 @@ header {
 /* Banner Landing */
 
 .banner_landing {
-  position: absolute;
+  width: 100%;
+  height: 989px;
+  //left: 0px;
+  //top: 0px;
+
+  //background: url(production ID_4465209.png);
+
+  //position: absolute;
   //width: 360px;
-  height: 568px;
-  left: 0px;
-  top: 72px;
-  background: #828282;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+  //height: 568px;
+  //left: 0px;
+  //top: 72px;
+  //background: #828282;
+  //box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
   .lenguage_select {
     position: absolute;
-    //width: 360px;
-    height: 48px;
-    right: 0px;
-    top: 0px;
-    background: $color5;
-    opacity: 0.1;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    /* 5 */
+
+    background: #f2eee3;
+    opacity: 0.15;
 
     .esp_eng {
       position: absolute;
-      width: 70px;
-      height: 48px;
-      right: 10px;
-      top: 0px;
+      left: 83.67%;
+      right: 1.88%;
+      top: 0%;
+      bottom: 0%;
 
       @mixin lenguage {
         position: absolute;
@@ -82,24 +92,28 @@ header {
         font-family: "Open Sans", sans-serif;
         font-style: normal;
         font-weight: bold;
-        font-size: 12px;
-        line-height: 16px;
+        font-size: 24px;
+        line-height: 33px;
         display: flex;
-        //align-items: center;
-        color: $color5;
-        opacity: 0.9;
+        align-items: center;
+        color: $color2;
+        //opacity: 0.9;
       }
 
       .esp {
         @include lenguage;
-        left: 8.57%;
-        right: 61.43%;
+        left: 10.27%;
+        right: 66.49%;
+        top: 16.67%;
+        bottom: 14.58%;
       }
 
       .eng {
         @include lenguage;
-        left: 57.14%;
-        right: 8.57%;
+        left: 67.57%;
+        right: 3.78%;
+        top: 14.58%;
+        bottom: 16.67%;
         letter-spacing: -0.05em;
       }
     }
@@ -124,3 +138,61 @@ header {
     color: #ffffff;
   }
 }
+
+
+.test{
+  position: absolute;
+width: 363px;
+height: 494px;
+left: calc(50% - 363px/2 - 132.5px);
+top: 422px;
+
+background: linear-gradient(270deg, #F94E3F 27.02%, rgba(249, 78, 63, 0) 127.82%);
+transform: matrix(0, 1, 1, 0, 0, 0);
+}
+
+.dividiv{
+/* Group 34 */
+
+position: absolute;
+width: 102.58px;
+height: 110px;
+left: 125px;
+top: 927px;
+
+
+
+/* Vector */
+
+position: absolute;
+width: 102.58px;
+height: 53.6px;
+left: 125px;
+top: 927px;
+
+/* 3 */
+background: #F94E3F;
+
+
+/* Vector */
+
+position: absolute;
+width: 102.53px;
+height: 53.16px;
+left: 125.05px;
+top: 983.84px;
+
+/* 3 */
+background: #F94E3F;
+
+
+/* Vector */
+
+position: absolute;
+width: 38.33px;
+height: 31.55px;
+left: 133.09px;
+top: 966.22px;
+
+/* 3 */
+background: #F94E3F;}
