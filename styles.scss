@@ -5,7 +5,7 @@ $color4: #e77e4d;
 $color5: #f2eee3;
 
 header {
-  position: relative;
+  //position: relative;
   //width: 360px;
   //height: 72px;
   /* 3 */
@@ -13,20 +13,15 @@ header {
 
   /* LOGO MOCCA */
   nav {
-    .logo_moca {
-      //height: 29px;
-      //left: 16px;
-      //border-radius: 0px;
-      //margin: 22px 0px 21px 16px;
-    }
     .menu {
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
       padding: 0px;
       height: 48px;
 
       ul {
+        display: flex;
+        //flex-direction: row;
+        //align-items: center;
+        justify-content: flex-end !important;
         li {
           a {
             left: 0px;
@@ -139,60 +134,21 @@ header {
   }
 }
 
-
-.test{
+.test {
   position: absolute;
-width: 363px;
-height: 494px;
-left: calc(50% - 363px/2 - 132.5px);
-top: 422px;
+  width: 363px;
+  height: 494px;
+  left: calc(50% - 363px / 2 - 132.5px);
+  top: 422px;
 
-background: linear-gradient(270deg, #F94E3F 27.02%, rgba(249, 78, 63, 0) 127.82%);
-transform: matrix(0, 1, 1, 0, 0, 0);
+  background: linear-gradient(
+    270deg,
+    #f94e3f 27.02%,
+    rgba(249, 78, 63, 0) 127.82%
+  );
+  transform: matrix(0, 1, 1, 0, 0, 0);
 }
 
-.dividiv{
-/* Group 34 */
-
-position: absolute;
-width: 102.58px;
-height: 110px;
-left: 125px;
-top: 927px;
-
-
-
-/* Vector */
-
-position: absolute;
-width: 102.58px;
-height: 53.6px;
-left: 125px;
-top: 927px;
-
-/* 3 */
-background: #F94E3F;
-
-
-/* Vector */
-
-position: absolute;
-width: 102.53px;
-height: 53.16px;
-left: 125.05px;
-top: 983.84px;
-
-/* 3 */
-background: #F94E3F;
-
-
-/* Vector */
-
-position: absolute;
-width: 38.33px;
-height: 31.55px;
-left: 133.09px;
-top: 966.22px;
-
-/* 3 */
-background: #F94E3F;}
+.ENG header nav div ul {
+  padding-left: 30px;
+}

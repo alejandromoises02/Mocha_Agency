@@ -1,23 +1,21 @@
 header {
-  position: relative;
   /* 3 */
   background: #f94e3f;
   /* LOGO MOCCA */
 }
 
 header nav .menu {
+  padding: 0px;
+  height: 48px;
+}
+
+header nav .menu ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  padding: 0px;
-  height: 48px;
+  -webkit-box-pack: end !important;
+      -ms-flex-pack: end !important;
+          justify-content: flex-end !important;
 }
 
 header nav .menu ul li a {
@@ -140,44 +138,15 @@ header nav .menu ul li a {
   position: absolute;
   width: 363px;
   height: 494px;
-  left: calc(50% - 363px/2 - 132.5px);
+  left: calc(50% - 363px / 2 - 132.5px);
   top: 422px;
-  background: -webkit-gradient(linear, right top, left top, color-stop(27.02%, #F94E3F), color-stop(127.82%, rgba(249, 78, 63, 0)));
-  background: linear-gradient(270deg, #F94E3F 27.02%, rgba(249, 78, 63, 0) 127.82%);
+  background: -webkit-gradient(linear, right top, left top, color-stop(27.02%, #f94e3f), color-stop(127.82%, rgba(249, 78, 63, 0)));
+  background: linear-gradient(270deg, #f94e3f 27.02%, rgba(249, 78, 63, 0) 127.82%);
   -webkit-transform: matrix(0, 1, 1, 0, 0, 0);
           transform: matrix(0, 1, 1, 0, 0, 0);
 }
 
-.dividiv {
-  /* Group 34 */
-  position: absolute;
-  width: 102.58px;
-  height: 110px;
-  left: 125px;
-  top: 927px;
-  /* Vector */
-  position: absolute;
-  width: 102.58px;
-  height: 53.6px;
-  left: 125px;
-  top: 927px;
-  /* 3 */
-  background: #F94E3F;
-  /* Vector */
-  position: absolute;
-  width: 102.53px;
-  height: 53.16px;
-  left: 125.05px;
-  top: 983.84px;
-  /* 3 */
-  background: #F94E3F;
-  /* Vector */
-  position: absolute;
-  width: 38.33px;
-  height: 31.55px;
-  left: 133.09px;
-  top: 966.22px;
-  /* 3 */
-  background: #F94E3F;
+.ENG header nav div ul {
+  padding-left: 30px;
 }
 /*# sourceMappingURL=styles.css.map */
