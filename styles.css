@@ -1,124 +1,125 @@
 header {
-  /* 3 */
   background: #f94e3f;
-  /* LOGO MOCCA */
+  padding: 10px 15px 10px 15px;
 }
 
-header nav .menu {
-  padding: 0px;
-  height: 48px;
-}
-
-header nav .menu ul {
+header nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end !important;
-      -ms-flex-pack: end !important;
-          justify-content: flex-end !important;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-header nav .menu ul li a {
-  left: 0px;
-  top: 13px;
+header nav img {
+  margin-left: 15px;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0px;
+}
+
+header nav ul li {
+  list-style: none;
+  margin: 10px;
+}
+
+header nav ul li a {
   font-family: "Comfortaa", cursive;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 22px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #f2eee3 !important;
-  -webkit-box-flex: 0;
-      -ms-flex: none;
-          flex: none;
-  -webkit-box-ordinal-group: 1;
-      -ms-flex-order: 0;
-          order: 0;
-  -ms-flex-positive: 0;
-      flex-grow: 0;
+  color: #f2eee3;
+}
+
+header nav ul li a:link,
+header nav ul li a:visited,
+header nav ul li a:active {
+  text-decoration: none;
+  color: #f2eee3;
 }
 
 /* Banner Landing */
+#backvideo {
+  min-width: 100%;
+  height: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  z-index: -100;
+  background-size: cover;
+}
+
 .banner_landing {
   width: 100%;
-  height: 989px;
+  height: auto;
 }
 
 .banner_landing .lenguage_select {
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
-  /* 5 */
-  background: #f2eee3;
-  opacity: 0.15;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.banner_landing .lenguage_select .esp_esp {
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  color: #e3632d;
+  border: none;
+  margin-left: 30px;
+  margin-right: 30px;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.banner_landing .lenguage_select .eng_esp {
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  color: #e3632d;
+  border: none;
+  margin-left: 30px;
+  margin-right: 30px;
+  cursor: pointer;
 }
 
 .banner_landing .lenguage_select .esp_eng {
-  position: absolute;
-  left: 83.67%;
-  right: 1.88%;
-  top: 0%;
-  bottom: 0%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  color: #e3632d;
+  border: none;
+  margin-left: 30px;
+  margin-right: 30px;
+  cursor: pointer;
 }
 
-.banner_landing .lenguage_select .esp_eng .esp {
-  position: absolute;
-  top: 33.33%;
-  bottom: 33.33%;
+.banner_landing .lenguage_select .eng_eng {
   font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: bold;
   font-size: 24px;
-  line-height: 33px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   color: #e3632d;
-  left: 10.27%;
-  right: 66.49%;
-  top: 16.67%;
-  bottom: 14.58%;
-}
-
-.banner_landing .lenguage_select .esp_eng .eng {
-  position: absolute;
-  top: 33.33%;
-  bottom: 33.33%;
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 33px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #e3632d;
-  left: 67.57%;
-  right: 3.78%;
-  top: 14.58%;
-  bottom: 16.67%;
-  letter-spacing: -0.05em;
+  border: none;
+  margin-left: 30px;
+  margin-right: 30px;
+  cursor: pointer;
+  font-weight: bolder;
 }
 
 .banner_landing .imagen_banner {
-  position: absolute;
-  width: 175px;
-  height: 44px;
-  left: 92px;
-  top: 263px;
   font-family: "Comfortaa", cursive;
   font-style: normal;
   font-weight: normal;
@@ -132,6 +133,49 @@ header nav .menu ul li a {
           align-items: center;
   text-align: center;
   color: #ffffff;
+}
+
+.banner_landing .banner__contacto {
+  margin: 150px 22px 0px 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  top: 150px;
+}
+
+.banner_landing .banner__contacto button {
+  height: 40px;
+  background-color: #e3632d;
+  border-radius: 5px;
+  color: #f2eee3;
+  border: 0;
+}
+
+.banner_landing .banner_adapt {
+  background-color: #f94e3f;
+  padding-right: 30%;
+  padding-left: 30%;
+}
+
+.banner_landing .banner_adapt img {
+  position: relative;
+  bottom: 40px;
+}
+
+.conocenos {
+  background-color: #e3632d;
+}
+
+.servicios {
+  background-color: #f2eee3;
+}
+
+.multimedia {
+  background-color: #6f2108;
 }
 
 .test {
@@ -148,5 +192,145 @@ header nav .menu ul li a {
 
 .ENG header nav div ul {
   padding-left: 30px;
+}
+
+.contacto {
+  background-color: #6f2108;
+  padding-top: 80px;
+}
+
+.contacto .contacto__formulario {
+  background-color: #e77e4d;
+  margin-left: 26%;
+  margin-right: 26%;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+
+.contacto .contacto__formulario h2 {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  color: #f2eee3;
+  margin-bottom: 30px;
+}
+
+.contacto .contacto__formulario form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contacto .contacto__formulario form input {
+  margin-bottom: 2%;
+  height: 35px;
+  border-radius: 5px;
+  border: 0;
+}
+
+.contacto .contacto__formulario form select {
+  margin-bottom: 2%;
+  height: 35px;
+  border-radius: 5px;
+  border: 0;
+}
+
+.contacto .contacto__formulario form textarea {
+  border-radius: 5px;
+  border: 0;
+  margin-bottom: 4%;
+}
+
+.contacto .contacto__contacto {
+  margin-left: 23%;
+  margin-right: 23%;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 2%;
+  padding-bottom: 4%;
+}
+
+.contacto .contacto__contacto .contacto__email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.contacto .contacto__contacto .contacto__email img {
+  height: 15px;
+  width: 20px;
+  margin-right: 10px;
+}
+
+.contacto .contacto__contacto .contacto__email p {
+  font-family: "Comfortaa", cursive;
+  font-size: 20px;
+  line-height: 32px;
+  color: #f2eee3;
+}
+
+.contacto .contacto__contacto p {
+  font-family: "Comfortaa", cursive;
+  font-size: 20px;
+  line-height: 32px;
+  color: #f2eee3;
+}
+
+.contacto .contacto__contacto .contacto__newsletter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contacto .contacto__contacto .contacto__newsletter input {
+  margin-bottom: 2%;
+  height: 35px;
+  border-radius: 5px;
+  border: 0;
+  width: 76%;
+  height: 40px;
+}
+
+.contacto .contacto__contacto .contacto__newsletter button {
+  height: 40px;
+  width: 19%;
+  background-color: #6f2108;
+  border: #e77e4d 1px solid;
+  border-radius: 5px;
+  color: #e77e4d;
+}
+
+.contacto .contacto__contacto .contacto__redes {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contacto .contacto__contacto .contacto__redes .redes img {
+  margin-right: 20px;
+}
+
+.contacto .contacto__contacto .contacto__privacidad {
+  font-size: 14px;
 }
 /*# sourceMappingURL=styles.css.map */

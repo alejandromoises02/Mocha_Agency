@@ -44,158 +44,225 @@
     <!--Español-->
     <div class="ESP">
       <!--Menu Header-->
-      <header class="container-fluid">
-        <nav
-          class="
-            navbar navbar-expand-lg navbar-light
-            row
-            justify-content-between
-            align-items-center
-          "
-        >
-          <img
-            src="multimedia/logo_mocca_5.png"
-            class="col-4 col-md-1"
-            alt="Logo Moca Agency"
-          />
-          <button
-            class="navbar-toggler col-1"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div
-            class="col-5 collapse navbar-collapse menu"
-            id="navbarSupportedContent"
-          >
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#">About us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#">Servicios</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#">Solicitar Presupuesto</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#">Blog</a>
-              </li>
-            </ul>
-          </div>
+      <header>
+        <nav>
+          <img src="multimedia/mocca.svg" alt="Logo Moca Agency" />
+          <ul>
+            <li>
+              <a href="#sobreNosotros">Sobre Nosotoros</a>
+            </li>
+            <li>
+              <a href="#servicios">Servicios</a>
+            </li>
+            <li>
+              <a href="#solicitarPresupuesto">Solicitar Presupuesto</a>
+            </li>
+            <li>
+              <a href="#">Blog</a>
+            </li>
+          </ul>
         </nav>
       </header>
       <!--Seleccionar idioma/Banner-->
+      <video
+        class="embed-responsive embed-responsive-21by9"
+        autoplay
+        muted
+        loop
+        id="backvideo"
+      >
+        <source src="multimedia/production ID_4465209.mp4" type="video/mp4" />
+      </video>
       <div class="banner_landing">
         <div class="lenguage_select">
-          <div class="esp_eng">
-            <p class="esp">ESP</p>
-            <p class="eng">ENG</p>
-          </div>
+          <p class="esp_esp">ESP</p>
+          <p class="eng_esp">ENG</p>
         </div>
-        <h1 class="imagen_banner">IMAGEN/BANNER VIDEO</h1>
+        <div class="banner__contacto">
+          <a href="#solicitarPresupuesto"><button>Contáctanos</button></a>
+          <a href="#">
+            <img src="multimedia/whatsapp.svg" alt="Contactanos via whatsapp" />
+          </a>
+        </div>
+        <img
+          class="banner_contact"
+          src="multimedia/backbanner.svg"
+          alt="fondo de imagen"
+        />
+        <div class="banner_adapt">
+          <img src="multimedia/adaptados.svg" alt="Nos adaptamos al tamaño de tu proyecto">
+          <img src="multimedia/cafe.svg" alt="Cafe">
+        </div>
       </div>
+      
       <!--Conocenos-->
-      <div><img src="multimedia/conocenos.svg" alt="conocenos" /></div>
+      <div class="conocenos" id="sobreNosotros"><img src="multimedia/conocenos.svg" alt="conocenos" /></div>
       <!--Servicios-->
-      <div><img src="multimedia/servicios.svg" alt="servicios" /></div>
+      <div class="servicios" id="servicios"><img src="multimedia/servicios.svg" alt="servicios" /></div>
       <!--Banner Numeros-->
-      <div><img src="multimedia/bannerNumeros.svg" alt="Banner Numeros" /></div>
+      <div class="servicios"><img src="multimedia/bannerNumeros.svg" alt="Banner Numeros" /></div>
       <!--Mapa Servicios-->
-      <div><img src="multimedia/mapa.svg" alt="Mapa Servicios" /></div>
+      <div class="conocenos"><img src="multimedia/mapa.svg" alt="Mapa Servicios" /></div>
       <!--Logos-->
-      <div><img src="multimedia/logos.svg" alt="Logos" /></div>
-      <h2>Solicita presupuesto</h2>
-      <form action="">
-        <input type="text" placeholder="Nombre">
-        <input type="email" placeholder="Correo" required>
-        <select name="servicios" id="for__servicios_ES">
-          <option value="Asesoria">Asesoria de marca</option>
-          <option value="Asesoria">Diseño Gráfico & Branding</option>
-          <option value="Asesoria">Creacion de contenido</option>
-          <option value="Asesoria">Social Media Marketing</option>
-          <option value="Asesoria">Desarollo web personalizado</option>
-        </select>
-        <textarea name="Texto_Ingresado" id="texto_Ingresado" cols="30" rows="10" placeholder="Breve descripcion de tu compañía"></textarea>
-      </form>
-
-
-
-
+      <div class="multimedia"><img src="multimedia/logos.svg" alt="Logos" /></div>
+      <!--Solicita presupuesto-->
+      <div class="contacto" id="solicitarPresupuesto">
+        <div class="contacto__formulario">
+          <h2>Solicita presupuesto</h2>
+          <form action="">
+            <input type="text" placeholder="Nombre" />
+            <input type="email" placeholder="Correo" required />
+            <select name="servicios" id="form__servicios_ES">
+              <option value="Asesoria">¿Cómo podemos ayudarte?</option>
+              <option value="Asesoria">Asesoria de marca</option>
+              <option value="Asesoria">Diseño Gráfico & Branding</option>
+              <option value="Asesoria">Creacion de contenido</option>
+              <option value="Asesoria">Social Media Marketing</option>
+              <option value="Asesoria">Desarollo web personalizado</option>
+            </select>
+            <textarea
+              name="Texto_Ingresado"
+              id="texto_Ingresado"
+              cols="30"
+              rows="6"
+              placeholder="Breve descripción de tu compañía"
+            ></textarea>
+          </form>
+        </div>
+        <div class="contacto__contacto">
+          <div class="contacto__email">
+            <img src="multimedia/email.svg" alt="email" />
+            <p>info@moccamarketing.com</p>
+          </div>
+          <p>Suscríbete a nuestro Newsletter:</p>
+          <div class="contacto__newsletter">
+            <input type="email" placeholder="E-mail" />
+            <button>Suscribirme</button>
+          </div>
+          <div class="contacto__redes">
+            <div class="redes">
+              <img src="multimedia/linkedin.svg" alt="Linkedin" />
+              <img src="multimedia/instagram.svg" alt="Instagram" />
+              <img src="multimedia/facebook.svg" alt="Facebook" />
+            </div>
+            <img src="multimedia/mocca.svg" alt="Logo Mocca" />
+          </div>
+          <p class="contacto__privacidad">Politicas de provacidad</p>
+        </div>
+      </div>
     </div>
-
-
-
 
     <!--Ingles-->
     <div class="ENG">
-      <header class="container-fluid">
-        <nav
-          class="
-            navbar navbar-expand-lg navbar-light
-            row
-            justify-content-between
-            align-items-center
-          "
-        >
-          <img
-            src="multimedia/logo_mocca_5.png"
-            class="col-4 col-md-1"
-            alt="Logo Moca Agency"
-          />
-          <button
-            class="navbar-toggler col-1"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div
-            class="col-4 collapse navbar-collapse menu"
-            id="navbarSupportedContent"
-          >
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#">About us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#">Blog</a>
-              </li>
-            </ul>
-          </div>
+      <!--Menu Header-->
+      <header>
+        <nav>
+          <img src="multimedia/mocca.svg" alt="Logo Moca Agency" />
+          <ul>
+            <li>
+              <a href="#aboutUs">About us</a>
+            </li>
+            <li>
+              <a href="#services">Services</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+            <li>
+              <a href="#">Blog</a>
+            </li>
+          </ul>
         </nav>
       </header>
+      <!--Seleccionar idioma/Banner-->
+      <video
+        class="embed-responsive embed-responsive-21by9"
+        autoplay
+        muted
+        loop
+        id="backvideo"
+      >
+        <source src="multimedia/production ID_4465209.mp4" type="video/mp4" />
+      </video>
       <div class="banner_landing">
         <div class="lenguage_select">
-          <div class="esp_eng">
-            <p class="esp">ESP</p>
-            <p class="eng">ENG</p>
-          </div>
+          <p class="esp_eng">ESP</p>
+          <p class="eng_eng">ENG</p>
         </div>
-        <h1 class="imagen_banner">IMAGEN/BANNER VIDEO</h1>
+        <div class="banner__contacto">
+          <a href="#contact"><button>Get in touch</button></a>
+          <a href="#">
+            <img src="multimedia/whatsapp.svg" alt="Contactanos via whatsapp" />
+          </a>
+        </div>
+        <img
+          class="banner_contact"
+          src="multimedia/backbanner.svg"
+          alt="fondo de imagen"
+        />
+        <div class="banner_adapt">
+          <img src="multimedia/adaptENG.svg" alt="Nos adaptamos al tamaño de tu proyecto">
+          <img src="multimedia/cafe.svg" alt="Cafe">
+        </div>
       </div>
-      <div><img src="multimedia/AboutUs.svg" alt="conocenos" /></div>
-      <div><img src="multimedia/service.svg" alt="conocenos" /></div>
-      <div><img src="multimedia/bannerNumbers.svg" alt="conocenos" /></div>
-      <div><img src="multimedia/map.svg" alt="conocenos" /></div>
-      <div><img src="multimedia/logos.svg" alt="conocenos" /></div>
+      
+      <!--Conocenos-->
+      <div class="conocenos" id="aboutUs"><img src="multimedia/AboutUs.svg" alt="About Us" /></div>
+      <!--Servicios-->
+      <div class="servicios" id="services"><img src="multimedia/service.svg" alt="services" /></div>
+      <!--Banner Numeros-->
+      <div class="servicios"><img src="multimedia/bannerNumbers.svg" alt="Banner Numbers" /></div>
+      <!--Mapa Servicios-->
+      <div class="conocenos"><img src="multimedia/map.svg" alt="Maps" /></div>
+      <!--Logos-->
+      <div class="multimedia"><img src="multimedia/logos.svg" alt="Logos" /></div>
+      <!--Solicita presupuesto-->
+      <div class="contacto" id="contact">
+        <div class="contacto__formulario">
+          <h2>Request a quote</h2>
+          <form action="">
+            <input type="text" placeholder="Name" />
+            <input type="email" placeholder="E-mail" required />
+            <select name="servicios" id="form__servicios_ES">
+              <option value="Asesoria">How can we help you?</option>
+              <option value="Asesoria">Brand consultation</option>
+              <option value="Asesoria">
+                Creative Graphic Design & Branding
+              </option>
+              <option value="Asesoria">Social Media Marketing</option>
+              <option value="Asesoria">Content Creation</option>
+              <option value="Asesoria">Custom Web Development</option>
+            </select>
+            <textarea
+              name="Texto_Ingresado"
+              id="texto_Ingresado"
+              cols="30"
+              rows="6"
+              placeholder="Brief description of your company"
+            ></textarea>
+          </form>
+        </div>
+        <div class="contacto__contacto">
+          <div class="contacto__email">
+            <img src="multimedia/email.svg" alt="email" />
+            <p>info@moccamarketing.com</p>
+          </div>
+          <p>Subscribe to our Newsletter:</p>
+          <div class="contacto__newsletter">
+            <input type="email" placeholder="E-mail" />
+            <button>Subscribe</button>
+          </div>
+          <div class="contacto__redes">
+            <div class="redes">
+              <img src="multimedia/linkedin.svg" alt="Linkedin" />
+              <img src="multimedia/instagram.svg" alt="Instagram" />
+              <img src="multimedia/facebook.svg" alt="Facebook" />
+            </div>
+            <img src="multimedia/mocca.svg" alt="Logo Mocca" />
+          </div>
+          <p class="contacto__privacidad">Privacy policies</p>
+        </div>
+      </div>
     </div>
   </body>
 </html>

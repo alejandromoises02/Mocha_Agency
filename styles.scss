@@ -5,39 +5,35 @@ $color4: #e77e4d;
 $color5: #f2eee3;
 
 header {
-  //position: relative;
-  //width: 360px;
-  //height: 72px;
-  /* 3 */
   background: $color3;
-
-  /* LOGO MOCCA */
+  padding: 10px 15px 10px 15px;
   nav {
-    .menu {
-      padding: 0px;
-      height: 48px;
-
-      ul {
-        display: flex;
-        //flex-direction: row;
-        //align-items: center;
-        justify-content: flex-end !important;
-        li {
-          a {
-            left: 0px;
-            top: 13px;
-            font-family: "Comfortaa", cursive;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 20px;
-            line-height: 22px;
-            display: flex;
-            align-items: center;
-            color: $color5 !important;
-            flex: none;
-            order: 0;
-            flex-grow: 0;
-          }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+      margin-left: 15px;
+    }
+    ul {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0px;
+      li {
+        list-style: none;
+        margin: 10px;
+        a {
+          font-family: "Comfortaa", cursive;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 22px;
+          color: $color5;
+        }
+        a:link,
+        a:visited,
+        a:active {
+          text-decoration: none;
+          color: $color5;
         }
       }
     }
@@ -46,81 +42,52 @@ header {
 
 /* Banner Landing */
 
+#backvideo {
+  min-width: 100%;
+  height: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -100;
+  background-size: cover;
+}
+
 .banner_landing {
   width: 100%;
-  height: 989px;
-  //left: 0px;
-  //top: 0px;
-
-  //background: url(production ID_4465209.png);
-
-  //position: absolute;
-  //width: 360px;
-  //height: 568px;
-  //left: 0px;
-  //top: 72px;
-  //background: #828282;
-  //box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+  height: auto;
   .lenguage_select {
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
+    display: flex;
+    justify-content: flex-end;
 
-    /* 5 */
+    @mixin lenguage {
+      font-family: "Open Sans", sans-serif;
+      font-size: 24px;
+      color: $color2;
+      border: none;
+      margin-left: 30px;
+      margin-right: 30px;
+      cursor: pointer;
+    }
+    .esp_esp {
+      @include lenguage;
+      font-weight: bolder;
+    }
 
-    background: #f2eee3;
-    opacity: 0.15;
-
+    .eng_esp {
+      @include lenguage;
+    }
     .esp_eng {
-      position: absolute;
-      left: 83.67%;
-      right: 1.88%;
-      top: 0%;
-      bottom: 0%;
+      @include lenguage;
+    }
 
-      @mixin lenguage {
-        position: absolute;
-        top: 33.33%;
-        bottom: 33.33%;
-        font-family: "Open Sans", sans-serif;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 24px;
-        line-height: 33px;
-        display: flex;
-        align-items: center;
-        color: $color2;
-        //opacity: 0.9;
-      }
-
-      .esp {
-        @include lenguage;
-        left: 10.27%;
-        right: 66.49%;
-        top: 16.67%;
-        bottom: 14.58%;
-      }
-
-      .eng {
-        @include lenguage;
-        left: 67.57%;
-        right: 3.78%;
-        top: 14.58%;
-        bottom: 16.67%;
-        letter-spacing: -0.05em;
-      }
+    .eng_eng {
+      @include lenguage;
+      font-weight: bolder;
     }
   }
 
   .imagen_banner {
-    position: absolute;
-    width: 175px;
-    height: 44px;
-    left: 92px;
-    top: 263px;
-
     font-family: "Comfortaa", cursive;
     font-style: normal;
     font-weight: normal;
@@ -129,11 +96,44 @@ header {
     display: flex;
     align-items: center;
     text-align: center;
-
     color: #ffffff;
+  }
+  .banner__contacto {
+    margin: 150px 22px 0px 22px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 150px;
+    button {
+      height: 40px;
+      background-color: $color2;
+      border-radius: 5px;
+      color: $color5;
+      border: 0;
+    }
+  }
+  .banner_adapt {
+    background-color: $color3;
+    padding-right: 30%;
+    padding-left: 30%;
+    img {
+      position: relative;
+      bottom: 40px;
+    }
   }
 }
 
+.conocenos{
+  background-color: $color2;
+}
+
+.servicios{
+  background-color: $color5;
+}
+
+.multimedia{
+  background-color: $color1;
+}
 .test {
   position: absolute;
   width: 363px;
@@ -151,4 +151,112 @@ header {
 
 .ENG header nav div ul {
   padding-left: 30px;
+}
+
+@mixin input_text {
+  height: 35px;
+  border-radius: 5px;
+  border: 0;
+}
+
+.contacto {
+  background-color: $color1;
+  padding-top: 80px;
+  .contacto__formulario {
+    background-color: $color4;
+    margin-left: 26%;
+    margin-right: 26%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    h2 {
+      font-family: "Open Sans", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 44px;
+      line-height: 60px;
+      text-align: center;
+      color: $color5;
+      margin-bottom: 30px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      input {
+        margin-bottom: 2%;
+        @include input_text;
+      }
+      select {
+        margin-bottom: 2%;
+        @include input_text;
+      }
+      textarea {
+        border-radius: 5px;
+        border: 0;
+        margin-bottom: 4%;
+      }
+    }
+  }
+  .contacto__contacto {
+    margin-left: 23%;
+    margin-right: 23%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 2%;
+    padding-bottom: 4%;
+    .contacto__email {
+      display: flex;
+      align-items: baseline;
+      img {
+        height: 15px;
+        width: 20px;
+        margin-right: 10px;
+      }
+      p {
+        font-family: "Comfortaa", cursive;
+        font-size: 20px;
+        line-height: 32px;
+        color: $color5;
+      }
+    }
+    p {
+      font-family: "Comfortaa", cursive;
+      font-size: 20px;
+      line-height: 32px;
+      color: $color5;
+    }
+    .contacto__newsletter {
+      display: flex;
+      justify-content: space-between;
+      input {
+        margin-bottom: 2%;
+        @include input_text;
+        width: 76%;
+        height: 40px;
+      }
+      button {
+        height: 40px;
+        width: 19%;
+        background-color: $color1;
+        border: $color4 1px solid;
+        border-radius: 5px;
+        color: $color4;
+      }
+    }
+    .contacto__redes {
+      padding-top: 35px;
+      padding-bottom: 35px;
+      display: flex;
+      justify-content: space-between;
+      .redes {
+        img {
+          margin-right: 20px;
+        }
+      }
+    }
+    .contacto__privacidad {
+      font-size: 14px;
+    }
+  }
 }
