@@ -4,6 +4,12 @@ $color3: #f94e3f;
 $color4: #e77e4d;
 $color5: #f2eee3;
 
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+
 header {
   background: $color3;
   padding: 10px 15px 10px 15px;
@@ -42,7 +48,7 @@ header {
 
 /* Banner Landing */
 
-#backvideo {
+.backvideo {
   min-width: 100%;
   height: auto;
   position: fixed;
@@ -123,15 +129,15 @@ header {
   }
 }
 
-.conocenos{
+.conocenos {
   background-color: $color2;
 }
 
-.servicios{
+.servicios {
   background-color: $color5;
 }
 
-.multimedia{
+.multimedia {
   background-color: $color1;
 }
 .test {
@@ -180,7 +186,7 @@ header {
       color: $color5;
       margin-bottom: 30px;
     }
-    form {
+    div {
       display: flex;
       flex-direction: column;
       input {
@@ -195,6 +201,14 @@ header {
         border-radius: 5px;
         border: 0;
         margin-bottom: 4%;
+      }
+      .submit {
+        height: 40px;
+        width: 19%;
+        background-color: $color1;
+        border: $color4 1px solid;
+        border-radius: 5px;
+        color: $color4;
       }
     }
   }
@@ -261,7 +275,7 @@ header {
   }
 }
 
-#menu_button{
+#menu_button {
   cursor: pointer;
 }
 
@@ -336,15 +350,47 @@ header {
   }
 }
 
-.conocenos_MOB{
+.menuMEsp {
+  background: linear-gradient(180deg, #f94e3f 0%, #e3632d 74%);
+  opacity: 0.9;
+  height: 100%;
+  ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-bottom: 0px;
+    li {
+      list-style: none;
+      margin: 10px;
+      a {
+        font-family: "Comfortaa", cursive;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 22px;
+        color: $color5;
+      }
+      a:link,
+      a:visited,
+      a:active {
+        text-decoration: none;
+        color: $color5;
+      }
+    }
+  }
+}
+
+.conocenos_MOB {
   background-color: $color2;
 }
 
-.servicios_MOB{
+.servicios_MOB {
   background-color: $color5;
 }
 
-.multimedia_MOB{
+.multimedia_MOB {
   background-color: $color1;
 }
 .test_MOB {
@@ -375,6 +421,14 @@ header {
 .contacto_MOB {
   background-color: $color1;
   padding-top: 80px;
+  .submit {
+    height: 40px;
+    width: 19%;
+    background-color: $color1;
+    border: $color4 1px solid;
+    border-radius: 5px;
+    color: $color4;
+  }
   .contacto__formulario_MOB {
     background-color: $color4;
     margin-left: 3%;
@@ -393,7 +447,7 @@ header {
       color: $color5;
       margin-bottom: 30px;
     }
-    form {
+    div {
       display: flex;
       flex-direction: column;
       input {
@@ -411,6 +465,7 @@ header {
       }
     }
   }
+
   .contacto__contacto_MOB {
     margin-left: 3%;
     margin-right: 3%;
@@ -473,7 +528,7 @@ header {
     }
   }
 }
-.backvideo {
+.backvideoM {
   height: 100%;
   position: fixed;
   top: 50%;

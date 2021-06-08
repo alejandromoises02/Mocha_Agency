@@ -1,3 +1,9 @@
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+
 header {
   background: #f94e3f;
   padding: 10px 15px 10px 15px;
@@ -51,7 +57,7 @@ header nav ul li a:active {
 }
 
 /* Banner Landing */
-#backvideo {
+.backvideo {
   min-width: 100%;
   height: auto;
   position: fixed;
@@ -220,7 +226,7 @@ header nav ul li a:active {
   margin-bottom: 30px;
 }
 
-.contacto .contacto__formulario form {
+.contacto .contacto__formulario div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -230,24 +236,33 @@ header nav ul li a:active {
           flex-direction: column;
 }
 
-.contacto .contacto__formulario form input {
+.contacto .contacto__formulario div input {
   margin-bottom: 2%;
   height: 35px;
   border-radius: 5px;
   border: 0;
 }
 
-.contacto .contacto__formulario form select {
+.contacto .contacto__formulario div select {
   margin-bottom: 2%;
   height: 35px;
   border-radius: 5px;
   border: 0;
 }
 
-.contacto .contacto__formulario form textarea {
+.contacto .contacto__formulario div textarea {
   border-radius: 5px;
   border: 0;
   margin-bottom: 4%;
+}
+
+.contacto .contacto__formulario div .submit {
+  height: 40px;
+  width: 19%;
+  background-color: #6f2108;
+  border: #e77e4d 1px solid;
+  border-radius: 5px;
+  color: #e77e4d;
 }
 
 .contacto .contacto__contacto {
@@ -444,6 +459,51 @@ header nav ul li a:active {
   bottom: 40px;
 }
 
+.menuMEsp {
+  background: -webkit-gradient(linear, left top, left bottom, from(#f94e3f), color-stop(74%, #e3632d));
+  background: linear-gradient(180deg, #f94e3f 0%, #e3632d 74%);
+  opacity: 0.9;
+  height: 100%;
+}
+
+.menuMEsp ul {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 0px;
+}
+
+.menuMEsp ul li {
+  list-style: none;
+  margin: 10px;
+}
+
+.menuMEsp ul li a {
+  font-family: "Comfortaa", cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 22px;
+  color: #f2eee3;
+}
+
+.menuMEsp ul li a:link,
+.menuMEsp ul li a:visited,
+.menuMEsp ul li a:active {
+  text-decoration: none;
+  color: #f2eee3;
+}
+
 .conocenos_MOB {
   background-color: #e3632d;
 }
@@ -477,6 +537,15 @@ header nav ul li a:active {
   padding-top: 80px;
 }
 
+.contacto_MOB .submit {
+  height: 40px;
+  width: 19%;
+  background-color: #6f2108;
+  border: #e77e4d 1px solid;
+  border-radius: 5px;
+  color: #e77e4d;
+}
+
 .contacto_MOB .contacto__formulario_MOB {
   background-color: #e77e4d;
   margin-left: 3%;
@@ -498,7 +567,7 @@ header nav ul li a:active {
   margin-bottom: 30px;
 }
 
-.contacto_MOB .contacto__formulario_MOB form {
+.contacto_MOB .contacto__formulario_MOB div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -508,21 +577,21 @@ header nav ul li a:active {
           flex-direction: column;
 }
 
-.contacto_MOB .contacto__formulario_MOB form input {
+.contacto_MOB .contacto__formulario_MOB div input {
   margin-bottom: 2%;
   height: 35px;
   border-radius: 5px;
   border: 0;
 }
 
-.contacto_MOB .contacto__formulario_MOB form select {
+.contacto_MOB .contacto__formulario_MOB div select {
   margin-bottom: 2%;
   height: 35px;
   border-radius: 5px;
   border: 0;
 }
 
-.contacto_MOB .contacto__formulario_MOB form textarea {
+.contacto_MOB .contacto__formulario_MOB div textarea {
   border-radius: 5px;
   border: 0;
   margin-bottom: 4%;
@@ -612,7 +681,7 @@ header nav ul li a:active {
   font-size: 14px;
 }
 
-.backvideo {
+.backvideoM {
   height: 100%;
   position: fixed;
   top: 50%;
