@@ -15,9 +15,6 @@ const esp = `<div id='español' >
         <li>
           <a href='#solicitarPresupuesto'>Solicitar Presupuesto</a>
         </li>
-        <li>
-          <a href='#'>Blog</a>
-        </li>
       </ul>
     </nav>
   </header>
@@ -146,9 +143,6 @@ const esp = `<div id='español' >
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#solicitarPresupuestoM">Solicitar Presupuesto</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Blog</a>
       </li>
     </ul>
   </div>
@@ -304,9 +298,6 @@ const eng = `<div id='ingles'>
         <li>
           <a href='#contact'>Contact</a>
         </li>
-        <li>
-          <a href='#'>Blog</a>
-        </li>
       </ul>
     </nav>
   </header>
@@ -438,9 +429,6 @@ const eng = `<div id='ingles'>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#contactM">Contact</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Blog</a>
       </li>
     </ul>
   </div>
@@ -591,9 +579,6 @@ const menuMEsp = `<div class="menuMEsp animate__animated animate__bounceInRight 
     </li>
     <li>
       <a href="#solicitarPresupuesto">Solicitar Presupuesto</a>
-    </li>
-    <li>
-      <a href="#">Blog</a>
     </li>
   </ul>
 </div>`
