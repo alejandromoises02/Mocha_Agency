@@ -1,3 +1,8 @@
+document.addEventListener("DOMContentLoaded", function(event) {
+    contenedor.innerHTML = esp;
+  });
+
+
 let contenedor = document.getElementById("contenedor_main");
 
 const goEng = () => {

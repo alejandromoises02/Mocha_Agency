@@ -19,14 +19,7 @@ const esp = `<div id='español' >
     </nav>
   </header>
   <!--Seleccionar idioma/Banner-->
-  <video
-    class='embed-responsive embed-responsive-21by9 backvideo'
-    autoplay
-    muted
-    loop
-  >
-    <source src='multimedia/production ID_4465209.mp4' type='video/mp4' />
-  </video>
+
   <div class='banner_landing animate__animated animate__bounceInRight'>
     <div class='lenguage_select'>
       <p class='esp_esp'>ESP</p>
@@ -149,9 +142,7 @@ const esp = `<div id='español' >
 </nav>
   </header>
   <!--Seleccionar idioma/Banner-->
-  <video class='backvideoM' autoplay muted loop>
-    <source src='multimedia/production ID_4465209.mp4' type='video/mp4' />
-  </video>
+  
   <div class='banner_landing_MOB animate__animated animate__bounceInRight'>
     <div class='lenguage_select_MOB'>
       <p class='esp_esp_MOB'>ESP</p>
@@ -302,14 +293,7 @@ const eng = `<div id='ingles'>
     </nav>
   </header>
   <!--Seleccionar idioma/Banner-->
-  <video
-    class='embed-responsive embed-responsive-21by9 backvideo'
-    autoplay
-    muted
-    loop
-  >
-    <source src='multimedia/production ID_4465209.mp4' type='video/mp4' />
-  </video>
+  
   <div class='banner_landing animate__animated animate__bounceInRight' id='sobreNosotros''>
     <div class='lenguage_select'>
       <p onclick=goEsp() class='esp_eng'>ESP</p>
@@ -435,9 +419,7 @@ const eng = `<div id='ingles'>
 </nav>
   </header>
   <!--Seleccionar idioma/Banner-->
-  <video class='backvideoM' autoplay muted loop>
-    <source src='multimedia/production ID_4465209.mp4' type='video/mp4' />
-  </video>
+  
   <div class='banner_landing_MOB animate__animated animate__bounceInRight'>
     <div class='lenguage_select_MOB'>
       <p onclick=goEsp() class='esp_eng_MOB'>ESP</p>
