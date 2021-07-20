@@ -1,11 +1,11 @@
-var firebaseConfig = {
-    apiKey: "AIzaSyAmpy1kZNVxwMZdwpoDeSNnKSNeo-EvYio",
-    authDomain: "moccaagencyform.firebaseapp.com",
-    projectId: "moccaagencyform",
-    storageBucket: "moccaagencyform.appspot.com",
-    messagingSenderId: "40998696112",
-    appId: "1:40998696112:web:a02abe24b9d5f1d3c07775"
-  };
+const firebaseConfig = {
+  apiKey: "AIzaSyBN-GoLoQmBCf0QlnDwgKeJuhcbmLTHIsc",
+  authDomain: "mocca-contacto.firebaseapp.com",
+  projectId: "mocca-contacto",
+  storageBucket: "mocca-contacto.appspot.com",
+  messagingSenderId: "754691537706",
+  appId: "1:754691537706:web:5956e938e9febdccd83c53"
+};
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   var firestore = firebase.firestore();

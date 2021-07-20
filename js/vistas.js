@@ -257,7 +257,7 @@ const esp = `<div id='español' >
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <div class="modal-body">Thank you, we will contact you soon</div>
+              <div class="modal-body">Gracias, en breve nos pondremos en contacto</div>
               <div class="modal-footer">
                 <button
                   type="button"
