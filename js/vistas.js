@@ -7,7 +7,7 @@ const esp = `<div id='español' >
       <img src='multimedia/mocca.svg' alt='Logo Moca Agency' />
       <ul>
         <li>
-          <a href='#sobreNosotros'>Sobre Nosotoros</a>
+          <a href='#sobreNosotros'>Sobre Nosotros</a>
         </li>
         <li>
           <a href='#servicios'>Servicios</a>
@@ -129,7 +129,7 @@ const esp = `<div id='español' >
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="#sobreNosotrosM">Sobre Nosotoros</a>
+        <a class="nav-link" href="#sobreNosotrosM">Sobre Nosotros</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#serviciosM">Servicios</a>
@@ -554,7 +554,7 @@ const eng = `<div id='ingles'>
 const menuMEsp = `<div class="menuMEsp animate__animated animate__bounceInRight id = "menuMEsp">
   <ul>
     <li>
-      <a href="#sobreNosotros">Sobre Nosotoros</a>
+      <a href="#sobreNosotros">Sobre Nosotros</a>
     </li>
     <li>
       <a href="#servicios">Servicios</a>
